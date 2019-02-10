@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Home</title>
+		<style>
+		fieldset{
+			margin:auto;
+			width:60%;
+		}
+		#tab{
+			width:50%;
+			cellpadding:20px;
+			margin:auto;
+			cellspacing:10px;
+		}
+		</style>
+	</head>
+	
+	<body>
+		<!--start of form-->
+		<center><h2>Booking</h2></center>
+		<form method="" action="">
+		<table id="tab">
+			
+			<tr>
+				<td>01: User Id:<span>*</span></td>
+				<td colspan="2"><select value="" name="User_ID">
+						<option></option>
+					</select>
+				</td>
+				
+			</tr>
+		
+			<tr>
+				<td>02. User NIC: <span>*</span></td>
+				<td colspan="2"><input type="text" value="" name="User_NIC"></td>
+			</tr>
+			<tr>
+				<td>03. Facility Name: </td>
+				<td colspan="2"><select name="FacName" value="" default>
+						<option>Hostel</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>04.Number of People: </td>
+				<td colspan="2"><input type="text" value="" name="NoPeop"></td>
+				
+			</tr>
+			<tr>
+				<td>04.Status: </td>
+				<td colspan="2"><select value="" name="status">
+						<option></option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>05.Check-in Date </td>
+				<td> <input type="date" name="c_inday"></td>
+				<td>Time:&nbsp;&nbsp;&nbsp;<input type="time" name="c_intime"></td>
+			</tr>
+			<tr>
+				<td>06.Check-out Date </td>
+				<td> <input type="date" name="c_outday"></td>
+				<td>Time:&nbsp;&nbsp;&nbsp;<input type="time" name="c_outtime"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" Value="Book Now"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Cancel"></td>
+			</tr>
+		</table>
+		
+		
+		
+		
+		</form>
+		<!-- end of form-->
+	</body>
+</html>

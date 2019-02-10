@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<Title> Payment </title>
+		
+		<style type="text/css">
+			#details {
+			  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+			  border-collapse: collapse;
+			  width: 100%;
+			}
+			
+			#details th{
+				background-color: #1ABC9C;			
+			}				
+
+			#details td {
+			  border: 1px solid #ddd;
+			  padding: 8px;
+			}
+
+			#details tr:nth-child(even){
+				background-color: #f2f2f2;
+			}
+
+			#details tr:hover {
+				background-color: #ddd;
+			}
+
+		</style>
+	</head>
+	<body>
+	
+		<h1 style = "color: red; text-align: center"> Payment </h1>
+		
+		<form id="UserIdentification">
+		
+			<table>
+			
+				<tr>
+					<td> Customer ID :</td>
+					<td> <input type="text"> </td>
+					<td> <input type="submit" value = "Find me"> </td>
+				</tr>
+				
+			</table>			
+			
+		</form>
+		
+<br><br>		
+		
+		<form id="payment">
+			<fieldset>	<legend> Payment Details </legend>
+				<table>
+				
+					<tr> 
+						<td> Bill Number : </td>
+						<td> <input type="text" value="001" readonly>				
+					</tr>
+					<tr>
+						<td> Date : </td>
+						<td> <input type="date"></td>
+					</tr>
+
+					<tr>
+						<td> Customer Name : </td>
+						<td><input type="text"></td>				
+					</tr>
+					<tr>
+						<td> Description </td>
+						<td> <select> 
+								<option value ="seminarhall"> Booking Seminar Hall chargers</option>						
+								<option value ="hallBook"> Booking hall chargers </option>
+								<option value ="roomBook"> Booking Room chargers </option>
+								<option value ="catering_bf"> Catering chargers (Breakfast)</option>
+								<option value ="catering_lunch"> Catering chargers (Lunch)</option>
+								<option value ="catering_dnr"> Catering chargers (Dinner)</option>
+						</td>
+					</tr>
+					<tr>
+						<td> Period (No. of days) </td>
+						<td> <input type="number" min="1"> </td>
+					</tr>
+					</tr>
+						<td>Amount Rs.: </td>
+						<td> <input type="text" readonly> &nbsp; &nbsp; &nbsp; </td>
+						<td> <input type="button" value="Add"></td>
+					</tr>
+					<tr>
+						<table id="details">
+							<tr>
+								<th> Description </th> 
+								<th> Period (No. of days) </th>
+								<th> Amount Rs. </th>
+							</tr>
+									<tr>
+										<td> Test Description 1</td> 
+										<td> Test Period 1 </td>
+										<td> Test Amount Rs. 1 </td>
+									</tr>
+									<tr>
+										<td> Test Description 1</td> 
+										<td> Test Period 1 </td>
+										<td> Test Amount Rs. 1 </td>
+									</tr>
+									<tr>
+										<td> Test Description 1</td> 
+										<td> Test Period 1 </td>
+										<td> Test Amount Rs. 1 </td>
+									</tr>
+									<tr>
+										<td> Test Description 1</td> 
+										<td> Test Period 1 </td>
+										<td> Test Amount Rs. 1 </td>
+									</tr>																
+						</table>
+					<tr>
+						<td> <h3> Total Amount </h3> </td>
+						<td> <input type="text" id="total" readonly> </td>
+						
+					</tr>
+					</tr>
+				</table>
+			</fieldset>		
+			
+			<br>
+			
+			<fieldset> <legend> Payment Method </legend>
+				<table>
+					<tr>
+						<td> <input type="radio" name="payType" value="Cash"> By CASH </td>
+					</tr>
+					
+					<tr>
+						<td><input type="radio" name="payType" value="Cheque"> By CHEQUE &nbsp;  &nbsp; &nbsp; &nbsp; </td>
+						<td> Enter Cheque Number : <input type="text"> </td>
+						
+					</tr>
+					<tr>
+					<td> <input type="radio" name="payType" value="CreditCard"> By CREDIT / DEBIT CARD &nbsp; </td>
+					<td> Enter Card Number : &nbsp; &nbsp; <input type="text"> &nbsp; &nbsp; &nbsp;</td>
+					<td> Card Expire Date : <input type="date"> </td>
+					</tr>				
+					
+				</table>
+			</fieldset>
+			
+			<br>
+			
+			<fieldset> <legend> Ready to PAY </legend>
+				<table>
+					<tr>
+						<td> <input type="submit" value="PAY"> </td>
+						<td> <input type="reset" value = "Cancel Transaction"> </td>
+					</tr>
+				</table>
+			</fieldset>
+			
+		</form>	
+	</body>
+</html>

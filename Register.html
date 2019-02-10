@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Home</title>
+		<style>
+		fieldset{
+			margin:auto;
+			width:60%;
+		}
+		#tab{
+			cellpadding:20px;
+			margin:10px;
+			cellspacing:10px;
+		}
+		</style>
+	</head>
+	
+	<body>
+		<!--start of form-->
+		<center><h2 >Customer Registration</h2></center>
+		<center><p>If you are new Please Regitser your self first, then only you can make  bookings </p></center>
+		<form method="" action="">
+		<fieldset>
+			<legend>Personal Details</legend>
+			<table id="tab">
+				<tr>
+					<td>01. Title:</td>
+					<td>
+						<input type="radio" name="titel" value="Mrs.">Mr. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="radio" name="titel" value="Ms.">Ms. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="radio" name="titel" value="Rev.">Rev. 
+					</td>
+				</tr>
+				
+				<tr>
+					<td>02. First Name: </td>
+					<td><input type="text" name="fname" placeholder="eg:- Perera" value=""></td>
+				</tr>
+				
+				<tr>
+					<td>03. Last Name:</td>
+					<td><input type="text" name="lname" placeholder="eg:- Liyanage" value=""></td>
+				</tr>
+				
+				<tr>
+					<td>04. National Identity Card No(NIC): </td>
+					<td><input type="text" value="" name="nic"></td>
+				</tr>
+			
+			</table>
+		</fieldset>
+		<br>
+		
+		<fieldset>
+			<legend>Contact Details</legend>
+			<table >
+				<tr>
+					<td>05. Organization Name: </td>
+					<td colspan="3"><input type="text" placeholder="eg:- ABC Ltd..." value="" name="org"></td>
+				</tr>
+			
+				<tr>
+					<td>06. Phone No: </td>
+					<td>
+						Office:<input type="text" value="" name="office_PNo"></td>
+					<td colspan="2">Personal:<input type="text" value="" name="Personal_PNo"></td>
+					
+				</tr>
+				
+				<tr>
+					<td>07. E-mail: </td>
+					<td>
+						Office e-mail: <input type="email" placeholder="eg:-abc@gmail.com" value="" name="O_email"></td>
+					<td colspan="2">Personal e-mail: <input type="email" placeholder="eg:-abc@gmail.com" value="" name="P_email"></td>
+					
+				</tr>
+				
+				<tr>
+					<td>08. Address:</td>
+					<td>
+						Address Line 1::<input type="text" placeholder="eg:- 30,Kandy Road " value="" name="SAl_01></td>
+					<td>Address Line 2: <input type="text" placeholder="eg:- Ranawana" value="" name="Al_02"></td>
+					<td>Address Line 3: <input type="text" placeholder="eg:- Katugasthota" value="" name="Al_03"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td colspan="3"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td ></td>
+					<td></td>
+					<td><input type="submit" Value="Register">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" Value="Cancel"></td>
+					
+				</tr>
+				
+			</table>
+			
+		</fieldset>
+		
+		</form>
+		<!-- end of form-->
+	</body>
+</html>
